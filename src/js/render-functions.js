@@ -6,8 +6,12 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 let gallery;
 const loader = document.querySelector('.loader');
 const btn = document.querySelector('.button');
-
+const input = document.querySelector('input');
 const list = document.querySelector('.gallery');
+
+export function clearInput() {
+  input.value = '';
+}
 
 export function createGallery(images) {
   // console.log(images);
