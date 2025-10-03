@@ -86,7 +86,7 @@ btn.addEventListener('click', clickMoreItem);
 
 async function clickMoreItem() {
   showLoader();
-  if (Math.ceil(totalHits / per_page) <= page) {
+  if (Math.ceil(totalHits / per_page) < page) {
     hideLoader();
     hideLoadMoreButton();
     iziToast.error({
